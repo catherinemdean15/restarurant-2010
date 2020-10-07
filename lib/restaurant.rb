@@ -12,11 +12,18 @@ class Restaurant
   end
 
   def add_dish(dish)
-    @dishes << dish.capitalize
+    @dishes << dish.upcase
   end
 
   def menu_dish_names
       p @dishes
-    end
+  end
 
+  def open_for_lunch?
+    if @opening_time.to_i <=12
+      open = true
+    else
+      open = false
+    end
+  end
 end
