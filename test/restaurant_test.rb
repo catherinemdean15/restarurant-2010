@@ -49,7 +49,7 @@ class RestaurantTest < Minitest::Test
     restaurant.add_dish('Pizzetta')
     restaurant.add_dish('Ravioli')
 
-    assert_equal ['Burrata', 'Pizzetta', 'Ravioli'], restaurant.dishes
+    assert_equal ['BURRATA', 'PIZZETTA', 'RAVIOLI'], restaurant.dishes
   end
 
   def test_open_for_lunch
