@@ -10,4 +10,12 @@ class Restaurant
   @opening_time.to_i + hours_open
   end
 
+  def add_dish(dish)
+    @dishes << dish.capitalize
+  end
+
+  def menu_dish_names
+      p @dishes
+    end
+
 end
